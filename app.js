@@ -1,1 +1,5 @@
-console.log('Hi, name name is Alex and I\'m 31 years old');
+function whoAmI() {
+  console.log('Hi, my name is Alex and I\'m 31 years old');
+}
+
+whoAmI();
