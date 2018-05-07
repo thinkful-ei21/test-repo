@@ -4,10 +4,9 @@ function yearOfBirth (age){
   return 2018 - age;
 }
 
-
 function whoAmI (name, age) {
   try {
-    if (age < 0) {
+    if (age < 0 || !name || !age) {
       throw new Error();
     }
   console.log (`Hi, my name is ${name} and I\'m ${age} years old`);
@@ -15,8 +14,10 @@ function whoAmI (name, age) {
   }
 
   catch(e) {
-    console.error('Age cannot be a negative number.');
+    console.error('One or more arguments not valid.');
   }
 }
 
-whoAmI('Alex', -20);
+//let nm;
+
+whoAmI( 'Alex', 20);
