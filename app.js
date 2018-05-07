@@ -1,2 +1,1 @@
-const myTeam = 'Alex James';
-console.log(myTeam);
+console.log('Hi, name name is Alex and I\'m 31 years old');
