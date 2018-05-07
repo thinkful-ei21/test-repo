@@ -6,7 +6,10 @@ function yearOfBirth (age){
 
 function whoAmI (name, age) {
   try {
-    if (age < 0 || !name || !age) {
+    if (age < 0 || !name || !age ) {
+      throw new Error();
+    }
+    if (typeof age !== 'number' || typeof name !== 'string') {
       throw new Error();
     }
   console.log (`Hi, my name is ${name} and I\'m ${age} years old`);
